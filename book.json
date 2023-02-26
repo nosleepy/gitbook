@@ -1,0 +1,78 @@
+{
+    "title": "GitBook",
+    "author" : "echo",
+	"output.name": "site",
+    "description" : "电子书",
+    "language" : "zh-hans",
+	"gitbook" : "3.2.3",
+	"root": ".",
+	"links" : {
+        "sidebar" : {
+            "Home" : "https://zhx2020.github.io"
+        }
+    },
+    "styles": {
+		"website": "styles/website.css",
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+	},
+    "plugins": [
+        "-lunr",
+		"-search",
+		"back-to-top-button",
+		"highlight",
+		"search-plus",
+		"expandable-chapters",
+		"chapter-fold",
+		"splitter",
+		"-prism",
+		"github",
+		"github-buttons",
+		"tbfed-pagefooter",
+		"edit-link",
+		"copy-code-button",
+		"simple-page-toc",
+		"anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+		"theme-default": {
+			"showLevel": false
+		},
+		"prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+		"github": {
+			"url": "https://github.com/zhx2020"
+		},
+		"github-buttons": {
+            "repo": "zhx2020/gitbook",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+		"tbfed-pagefooter": {
+			"copyright":"Copyright &copy zhx2020.github.io 2020",
+			"modify_label": "该文件修订时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"edit-link": {
+			"base": "https://github.com/zhx2020/gitbook/edit/master",
+			"label": "Edit This Page"
+		},
+		"simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+		"anchor-navigation-ex": {
+            "showLevel": false,
+            "showGoTop": false
+        }
+    }
+}
